@@ -1,18 +1,20 @@
-pyh
-=====
+helpy
+=======
 
 #### Python Built-In Help Documentation from the Command Line
 
 ### Description
 
-pyh displays built-in Python documentation from the command line without the need to use the interactive Python interpreter console. View documentation by Python module, class, method, function, or keyword.
+helpy displays built-in Python documentation from the command line without the need to use the interactive Python interpreter console. View documentation by Python module, class, method, function, or keyword.
+
+Tested in cPython 2.6, 2.7, 3.2, 3.3, and pypy 2.2 (Python 2.7.3)
 
 ### Install
 
 Install with `pip` by entering the following command:
 
 ``` bash
-pip install pyh
+pip install helpy
 ```
 
 or download and unpack the source repository, navigate to the top level directory in the repository, and enter:
@@ -24,7 +26,7 @@ python setup.py install
 ### Usage
 
 ``` bash
-pyh <module,class,method,function,keyword>
+helpy <module,class,method,function,keyword>
 ```
 
 ### Examples
@@ -32,7 +34,7 @@ pyh <module,class,method,function,keyword>
 #### Module Documentation
 
 ``` bash
-$ pyh sys
+$ helpy sys
 
 Help on built-in module sys:
 
@@ -57,7 +59,7 @@ DESCRIPTION
 #### Class Documentation
 
 ``` bash
-$ pyh dict
+$ helpy dict
 
 Help on class dict in module __builtin__:
 
@@ -80,7 +82,7 @@ class dict(object)
 #### Method Documentation
 
 ``` bash
-$ pyh dict.update
+$ helpy dict.update
 
 Help on method_descriptor in dict:
 
@@ -94,7 +96,7 @@ dict.update = update(...)
 #### Function Documentation
 
 ``` bash
-$ pyh max
+$ helpy max
 
 Help on built-in function max in module __builtin__:
 
@@ -108,4 +110,4 @@ max(...)
 
 ### Issue Reporting
 
-Issue reporting is available on the [GitHub repository](https://github.com/chrissimpkins/pyh/issues).
+Issue reporting is available on the [GitHub repository](https://github.com/chrissimpkins/helpy/issues).

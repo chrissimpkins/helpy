@@ -13,3 +13,4 @@ lib/pyh.egg-info/entry_points.txt
 lib/pyh.egg-info/requires.txt
 lib/pyh.egg-info/top_level.txt
 lib/pyh/commands/__init__.py
+lib/pyh/commands/pyhelp.py

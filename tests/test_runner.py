@@ -15,6 +15,7 @@ class PyHelpTest(unittest.TestCase):
         pass
 
     def test_execute_command(self):
+        """Test execution of a pyh command"""
         state = StateObject()
         if (state.py_major == 2 and state.py_minor > 6) or state.py3:
             response = muterun('pyh sys')

@@ -4,13 +4,13 @@
 #------------------------------------------------------------------------------
 # Application Name
 #------------------------------------------------------------------------------
-app_name = 'pyh'
+app_name = 'helpy'
 
 #------------------------------------------------------------------------------
 # Version Number
 #------------------------------------------------------------------------------
-major_version = "0"
-minor_version = "1"
+major_version = "1"
+minor_version = "0"
 patch_version = "0"
 
 #------------------------------------------------------------------------------
@@ -22,39 +22,39 @@ debug = False
 # Usage String
 #------------------------------------------------------------------------------
 usage = """
-Usage: pyh <module,class,method,function,keyword>
-Use --pyh help-- for more information"""
+Usage: helpy <module,class,method,function,keyword>
+Use --helpy help-- for more information"""
 
 #------------------------------------------------------------------------------
 # Help String
 #------------------------------------------------------------------------------
 help = """
 ---------------------------------------
- pyh
+ helpy
  Copyright 2014 Christopher Simpkins
  MIT license
 ---------------------------------------
 
-pyh displays built-in Python documentation from the command line. View documentation by Python module, class, method, function, or keyword.
+helpy displays built-in Python documentation from the command line. View documentation by Python module, class, method, function, or keyword.
 
 USAGE
 
-  pyh <module,class,method,function,keyword>
+  helpy <module,class,method,function,keyword>
 
 EXAMPLES
 
-  Module Docs ••••••   pyh sys
+  Module Docs ••••••   helpy sys
 
-  Class Docs  ••••••   pyh dict
+  Class Docs  ••••••   helpy dict
 
-  Method Docs ••••••   pyh dict.update
+  Method Docs ••••••   helpy dict.update
 
-  Function Docs  •••   pyh max
+  Function Docs  •••   helpy max
 
 SOURCE REPOSITORY
 
-  https://github.com/chrissimpkins/pyh
+  https://github.com/chrissimpkins/helpy
 
 ISSUE REPORTING
 
-  https://github.com/chrissimpkins/pyh/issues"""
+  https://github.com/chrissimpkins/helpy/issues"""

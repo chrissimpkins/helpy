@@ -27,9 +27,9 @@ def version_read():
 
 
 setup(
-    name='pyh',
+    name='helpy',
     version=version_read(),
-    description='pyh displays built-in Python documentation from the command line.',
+    description='helpy displays built-in Python documentation from the command line.',
     long_description=(docs_read('README.rst')),
     url='',
     license='MIT license',
@@ -38,13 +38,13 @@ setup(
     platforms=['any'],
     entry_points = {
         'console_scripts': [
-            'pyh = pyh.app:main'
+            'helpy = helpy.app:main'
         ],
     },
     packages=find_packages("lib"),
     package_dir={'': 'lib'},
     install_requires=['Naked'],
-    keywords='python,help,documentation,built-in,command line',
+    keywords='python,help,documentation,built-in,command line,helpy',
     include_package_data=True,
     classifiers=[
     'Intended Audience :: Developers',
