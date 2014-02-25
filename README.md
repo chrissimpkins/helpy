@@ -5,7 +5,7 @@ pyh
 
 ### Description
 
-pyh displays built-in Python documentation from the command line. View documentation by Python module, class, method, function, or keyword.
+pyh displays built-in Python documentation from the command line without the need to use the interactive Python interpreter console. View documentation by Python module, class, method, function, or keyword.
 
 ### Usage
 
