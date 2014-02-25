@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.cfg
+setup.py
+docs/LICENSE
+docs/README.rst
+lib/helpy/__init__.py
+lib/helpy/app.py
+lib/helpy/settings.py
+lib/helpy.egg-info/PKG-INFO
+lib/helpy.egg-info/SOURCES.txt
+lib/helpy.egg-info/dependency_links.txt
+lib/helpy.egg-info/entry_points.txt
+lib/helpy.egg-info/requires.txt
+lib/helpy.egg-info/top_level.txt
+lib/helpy/commands/__init__.py
+lib/helpy/commands/pyhelp.py

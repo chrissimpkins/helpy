@@ -1,18 +1,18 @@
 Metadata-Version: 1.1
-Name: pyh
+Name: helpy
 Version: 1.0.0
-Summary: pyh displays built-in Python documentation from the command line.
-Home-page: UNKNOWN
+Summary: helpy displays built-in Python documentation from the command line.
+Home-page: https://github.com/chrissimpkins/helpy
 Author: Christopher Simpkins
 Author-email: chris@zerolabs.net
 License: MIT license
-Description: pyh
-        ======
+Description: helpy
+        ========
         
         Description
         -------------
         
-        pyh displays built-in Python documentation from the command line without the need to use the interactive Python interpreter console. View documentation by Python module, class, method, function, or keyword.
+        ``helpy`` displays built-in Python documentation from the command line without the need to use the interactive Python interpreter console. View documentation by Python module, class, method, function, or keyword.
         
         Tested in cPython 2.6, 2.7, 3.2, 3.3, and pypy 2.2 (Python 2.7.3)
         
@@ -23,7 +23,7 @@ Description: pyh
         
         .. code-block:: bash
         
-        	pip install pyh
+        	pip install helpy
         
         or download the source repository, unpack it, and navigate to the top level of the repository.  Then enter:
         
@@ -36,7 +36,7 @@ Description: pyh
         
         .. code-block:: bash
         
-        	pyh <module,class,method,function,keyword>
+        	helpy <module,class,method,function,keyword>
         
         
         Examples
@@ -47,14 +47,14 @@ Description: pyh
         
         .. code-block:: bash
         
-        	pyh sys
+        	helpy sys
         
         Class Documentation
         ^^^^^^^^^^^^^^^^^^^^^^
         
         .. code-block:: bash
         
-        	pyh dict
+        	helpy dict
         
         
         Method Documentation
@@ -62,7 +62,7 @@ Description: pyh
         
         .. code-block:: bash
         
-        	pyh dict.update
+        	helpy dict.update
         
         
         Function Documentation
@@ -70,16 +70,16 @@ Description: pyh
         
         .. code-block:: bash
         
-        	pyh max
+        	helpy max
         
         
         Issue Reporting
         -------------------
         
-        Issue reporting is available on the `GitHub repository <https://github.com/chrissimpkins/pyh/issues>`_
+        Issue reporting is available on the `GitHub repository <https://github.com/chrissimpkins/helpy/issues>`_
         
         
-Keywords: python,help,documentation,built-in,command line
+Keywords: python,help,documentation,built-in,command line,helpy
 Platform: any
 Classifier: Intended Audience :: Developers
 Classifier: Programming Language :: Python :: Implementation :: PyPy

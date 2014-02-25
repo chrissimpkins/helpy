@@ -7,7 +7,7 @@ def docs_read(fname):
     return open(os.path.join(os.path.dirname(__file__), 'docs', fname)).read()
 
 def version_read():
-    settings_file = open(os.path.join(os.path.dirname(__file__), 'lib', 'pyh', 'settings.py')).read()
+    settings_file = open(os.path.join(os.path.dirname(__file__), 'lib', 'helpy', 'settings.py')).read()
     major_regex = """major_version\s*?=\s*?["']{1}(\d+)["']{1}"""
     minor_regex = """minor_version\s*?=\s*?["']{1}(\d+)["']{1}"""
     patch_regex = """patch_version\s*?=\s*?["']{1}(\d+)["']{1}"""
@@ -31,7 +31,7 @@ setup(
     version=version_read(),
     description='helpy displays built-in Python documentation from the command line.',
     long_description=(docs_read('README.rst')),
-    url='',
+    url='https://github.com/chrissimpkins/helpy',
     license='MIT license',
     author='Christopher Simpkins',
     author_email='chris@zerolabs.net',

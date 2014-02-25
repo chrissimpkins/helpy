@@ -14,6 +14,6 @@ def print_help_for(the_object):
             needle = needle[1:-1]
         help(needle)
     except Exception as e:
-        sys.stderr.write("pyh : There was an error processing the query.")
+        sys.stderr.write("helpy : There was an error processing the query.")
         sys.exit(1)
 

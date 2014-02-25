@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 #------------------------------------------------------------------------------
-# pyh
+# helpy
 # Copyright 2014 Christopher Simpkins
 # MIT license
 #------------------------------------------------------------------------------
@@ -38,8 +38,8 @@ def main():
     # Test that user entered at least one argument to the executable, print usage if not
     #------------------------------------------------------------------------------------------
     if not c.app_validates_args():
-        from pyh.settings import usage as pyh_usage
-        print(pyh_usage)
+        from helpy.settings import usage as helpy_usage
+        print(helpy_usage)
         sys.exit(1)
     #------------------------------------------------------------------------------------------
     # [ NAKED FRAMEWORK COMMANDS ]
@@ -47,15 +47,15 @@ def main():
     #   --> settings for user messages are assigned in the lib/pyh/settings.py file
     #------------------------------------------------------------------------------------------
     if c.help():      # User requested pyh help information
-        from pyh.settings import help as pyh_help
-        print(pyh_help)
+        from helpy.settings import help as helpy_help
+        print(helpy_help)
         sys.exit(0)
     elif c.usage():   # User requested pyh usage information
-        from pyh.settings import usage as pyh_usage
-        print(pyh_usage)
+        from helpy.settings import usage as helpy_usage
+        print(helpy_usage)
         sys.exit(0)
     elif c.version(): # User requested pyh version information
-        from pyh.settings import app_name, major_version, minor_version, patch_version
+        from helpy.settings import app_name, major_version, minor_version, patch_version
         version_display_string = app_name + ' ' + major_version + '.' + minor_version + '.' + patch_version
         print(version_display_string)
         sys.exit(0)
@@ -65,11 +65,11 @@ def main():
     #------------------------------------------------------------------------------------------
 
     if c.argc > 1:
-        from pyh.settings import usage as pyh_usage
-        print(pyh_usage)
+        from helpy.settings import usage as helpy_usage
+        print(helpy_usage)
         sys.exit(1)
     elif c.argc == 1:
-        from pyh.commands.pyhelp import print_help_for
+        from helpy.commands.pyhelp import print_help_for
         print_help_for(c.first)
 
     #------------------------------------------------------------------------------------------

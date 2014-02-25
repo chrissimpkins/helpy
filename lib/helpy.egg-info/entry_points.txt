@@ -1,0 +1,3 @@
+[console_scripts]
+helpy = helpy.app:main
+
