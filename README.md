@@ -5,9 +5,9 @@ helpy   [![PyPI version](https://badge.fury.io/py/helpy.png)](https://pypi.pytho
 
 ### Description
 
-helpy displays built-in Python documentation from the command line without the need to use the interactive Python interpreter console. View documentation by Python module, class, method, function, or keyword.
+`helpy` displays built-in Python documentation from the command line without the need to use the interactive Python interpreter console. View documentation by Python module, class, method, function, or keyword.
 
-Tested in cPython 2.6, 2.7, 3.2, 3.3, and pypy 2.2 (Python 2.7.3)
+Tested in cPython 2.6, 2.7, 3.2, 3.3, and pypy 2.2 (Python 2.7.3).  Documentation is from the Python interpreter version that is used to execute `helpy`
 
 ### Install
 
