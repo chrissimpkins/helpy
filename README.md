@@ -1,4 +1,4 @@
-helpy
+helpy   [![PyPI version](https://badge.fury.io/py/helpy.png)](https://pypi.python.org/pypi/helpy)
 =======
 
 #### Python Built-In Help Documentation from the Command Line
