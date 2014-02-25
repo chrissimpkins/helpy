@@ -29,12 +29,12 @@ def version_read():
 setup(
     name='pyh',
     version=version_read(),
-    description='',
+    description='pyh displays built-in Python documentation from the command line.',
     long_description=(docs_read('README.rst')),
     url='',
     license='MIT license',
     author='Christopher Simpkins',
-    author_email='',
+    author_email='chris@zerolabs.net',
     platforms=['any'],
     entry_points = {
         'console_scripts': [
@@ -44,7 +44,15 @@ setup(
     packages=find_packages("lib"),
     package_dir={'': 'lib'},
     install_requires=['Naked'],
-    keywords='',
+    keywords='python,help,documentation,built-in,command line',
     include_package_data=True,
-    classifiers=[],
+    classifiers=[
+    'Intended Audience :: Developers',
+    'Programming Language :: Python :: Implementation :: PyPy',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 2',
+    'Programming Language :: Python',
+    'License :: OSI Approved :: MIT License'
+    ],
 )

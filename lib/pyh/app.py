@@ -33,15 +33,11 @@ def main():
     #   used for all subsequent conditional logic in the CLI application
     #------------------------------------------------------------------------------------------
     c = Command(sys.argv[0], sys.argv[1:])
-    #------------------------------------------------------------------------------
-    # [ Instantiate state object ]
-    #------------------------------------------------------------------------------
-    state = StateObject()
     #------------------------------------------------------------------------------------------
     # [ Command Suite Validation ] - early validation of appropriate command syntax
     # Test that user entered at least one argument to the executable, print usage if not
     #------------------------------------------------------------------------------------------
-    if not c.command_suite_validates():
+    if not c.app_validates_args():
         from pyh.settings import usage as pyh_usage
         print(pyh_usage)
         sys.exit(1)
@@ -68,20 +64,13 @@ def main():
     #   Enter your command line parsing logic below
     #------------------------------------------------------------------------------------------
 
-    # [[ Example usage ]] ------------------------------->>>
-    # if c.cmd == 'hello':
-    #     if c.cmd2 = 'world':
-    # 	      if c.option('--print'):
-    # 		      print('Hello World!')
-    # elif c.cmd == 'spam':
-    #     if c.option_with_arg('--with'):
-    # 		  friend_of_spam = c.arg('--with')    # user enters pyh spam --with eggs
-    # 		  print('spam and ' + friend_of_spam) # prints 'spam and eggs'
-    # elif c.cmd == 'naked':
-    #     if c.flag("--language"):
-    #         lang = c.flag_arg("--language")     # user enters pyh naked --language=python
-    #         print("Naked & " + lang)            # prints 'Naked & python'
-    # End example --------------------------------------->>>
+    if c.argc > 1:
+        from pyh.settings import usage as pyh_usage
+        print(pyh_usage)
+        sys.exit(1)
+    elif c.argc == 1:
+        from pyh.commands.pyhelp import print_help_for
+        print_help_for(c.first)
 
     #------------------------------------------------------------------------------------------
     # [ DEFAULT MESSAGE FOR MATCH FAILURE ]

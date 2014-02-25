@@ -1,0 +1,3 @@
+[console_scripts]
+pyh = pyh.app:main
+
