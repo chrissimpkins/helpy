@@ -7,6 +7,20 @@ pyh
 
 pyh displays built-in Python documentation from the command line without the need to use the interactive Python interpreter console. View documentation by Python module, class, method, function, or keyword.
 
+### Install
+
+Install with `pip` by entering the following command:
+
+``` bash
+pip install pyh
+```
+
+or download and unpack the source repository, navigate to the top level directory in the repository, and enter:
+
+``` bash
+python setup.py install
+```
+
 ### Usage
 
 ``` bash
