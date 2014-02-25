@@ -32,25 +32,78 @@ pyh <module,class,method,function,keyword>
 #### Module Documentation
 
 ``` bash
-pyh sys
+$ pyh sys
+
+Help on built-in module sys:
+
+NAME
+    sys
+
+FILE
+    (built-in)
+
+MODULE DOCS
+    http://docs.python.org/library/sys
+
+DESCRIPTION
+    This module provides access to some objects used or maintained by the
+    interpreter and to functions that interact strongly with the interpreter.
+
+    Dynamic objects:
+
+...
 ```
 
 #### Class Documentation
 
 ``` bash
-pyh dict
+$ pyh dict
+
+Help on class dict in module __builtin__:
+
+class dict(object)
+ |  dict() -> new empty dictionary
+ |  dict(mapping) -> new dictionary initialized from a mapping object's
+ |      (key, value) pairs
+ |  dict(iterable) -> new dictionary initialized as if via:
+ |      d = {}
+ |      for k, v in iterable:
+ |          d[k] = v
+ |  dict(**kwargs) -> new dictionary initialized with the name=value pairs
+ |      in the keyword argument list.  For example:  dict(one=1, two=2)
+ |
+ |  Methods defined here:
+
+ ...
 ```
 
 #### Method Documentation
 
 ``` bash
-pyh dict.update
+$ pyh dict.update
+
+Help on method_descriptor in dict:
+
+dict.update = update(...)
+    D.update([E, ]**F) -> None.  Update D from dict/iterable E and F.
+    If E present and has a .keys() method, does:     for k in E: D[k] = E[k]
+    If E present and lacks .keys() method, does:     for (k, v) in E: D[k] = v
+    In either case, this is followed by: for k in F: D[k] = F[k]
 ```
 
 #### Function Documentation
 
 ``` bash
-pyh max
+$ pyh max
+
+Help on built-in function max in module __builtin__:
+
+max(...)
+    max(iterable[, key=func]) -> value
+    max(a, b, c, ...[, key=func]) -> value
+
+    With a single iterable argument, return its largest item.
+    With two or more arguments, return the largest argument.
 ```
 
 ### Issue Reporting
