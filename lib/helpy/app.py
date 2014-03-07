@@ -26,7 +26,6 @@
 def main():
     import sys
     from Naked.commandline import Command
-    from Naked.toolshed.state import StateObject
 
     #------------------------------------------------------------------------------------------
     # [ Instantiate command line object ]
