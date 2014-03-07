@@ -111,3 +111,15 @@ max(...)
 ### Issue Reporting
 
 Issue reporting is available on the [GitHub repository](https://github.com/chrissimpkins/helpy/issues).
+
+
+### Changes
+
+1.0.1 - refactored help request code
+
+1.0.0 - initial release
+
+
+### License
+
+[MIT License](https://github.com/chrissimpkins/helpy/blob/master/docs/LICENSE)
