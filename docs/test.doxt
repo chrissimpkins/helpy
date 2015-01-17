@@ -1,6 +1,6 @@
 ---doxx---
 
-basename: pythonclass
+# basename: pythonclass
 extension: py
 destination_directory: build
 
