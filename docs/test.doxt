@@ -1,0 +1,20 @@
+---doxx---
+
+basename: pythonclass
+extension: py
+destination_directory: build
+
+---doxx---
+#!/usr/bin/env python
+# encoding: utf-8
+
+from Naked.toolshed.file import FileReader
+from Naked.toolshed.system import directory, make_path
+from Naked.toolshed.system import file_exists, stderr
+from yaml import load_all
+try:
+    from yaml import CLoader as Loader, CDumper as Dumper
+except {{error}}:
+    from yaml import Loader, Dumper
+
+class {{classname}}(object):
